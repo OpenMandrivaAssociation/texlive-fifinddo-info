@@ -1,3 +1,9 @@
+# revision 24387
+# category Package
+# catalog-ctan /info/fifinddo-info
+# catalog-date 2011-10-24 16:26:34 +0200
+# catalog-license lppl1.3
+# catalog-version 1.1b
 Name:		texlive-fifinddo-info
 Version:	1.1b
 Release:	1
@@ -53,6 +59,7 @@ package.
 %doc %{_texmfdistdir}/source/latex/fifinddo-info/makevars/longdan.sh
 %doc %{_texmfdistdir}/source/latex/fifinddo-info/makevars/makedots.tex
 %doc %{_texmfdistdir}/source/latex/fifinddo-info/makevars/texvars.sh
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,3 +70,5 @@ package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
