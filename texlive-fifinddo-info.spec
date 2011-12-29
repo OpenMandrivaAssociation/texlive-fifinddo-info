@@ -17,9 +17,6 @@ Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fifinddo-info.sou
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 The bundle: - exhibits the process of making an "HTML beamer
@@ -59,7 +56,6 @@ package.
 %doc %{_texmfdistdir}/source/latex/fifinddo-info/makevars/longdan.sh
 %doc %{_texmfdistdir}/source/latex/fifinddo-info/makevars/makedots.tex
 %doc %{_texmfdistdir}/source/latex/fifinddo-info/makevars/texvars.sh
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -70,5 +66,3 @@ package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
