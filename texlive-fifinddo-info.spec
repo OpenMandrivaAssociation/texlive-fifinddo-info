@@ -1,12 +1,12 @@
-# revision 24387
+# revision 29349
 # category Package
 # catalog-ctan /info/fifinddo-info
-# catalog-date 2011-10-24 16:26:34 +0200
+# catalog-date 2012-05-29 13:27:24 +0200
 # catalog-license lppl1.3
 # catalog-version 1.1b
 Name:		texlive-fifinddo-info
 Version:	1.1b
-Release:	2
+Release:	3
 Summary:	German HTML beamer presentation on nicetext and morehype
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/fifinddo-info
@@ -66,17 +66,3 @@ package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1b-2
-+ Revision: 751834
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1b-1
-+ Revision: 718431
-- texlive-fifinddo-info
-- texlive-fifinddo-info
-- texlive-fifinddo-info
-- texlive-fifinddo-info
-
