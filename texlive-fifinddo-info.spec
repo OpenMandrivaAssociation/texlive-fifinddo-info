@@ -6,7 +6,7 @@
 # catalog-version 1.1b
 Name:		texlive-fifinddo-info
 Version:	1.1b
-Release:	4
+Release:	5
 Summary:	German HTML beamer presentation on nicetext and morehype
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/fifinddo-info
