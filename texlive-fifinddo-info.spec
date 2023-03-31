@@ -1,6 +1,6 @@
 Name:		texlive-fifinddo-info
 Version:	29349
-Release:	1
+Release:	2
 Summary:	German HTML beamer presentation on nicetext and morehype
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/fifinddo-info
